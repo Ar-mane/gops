@@ -74,8 +74,8 @@ function App() {
           <h4>
             هذا حساب خاص لا يمكن الولوج اليه الا من افريقيا <br />شغل موقعك للولوج
           </h4>
-          <Button variant={disabled ? "secondary" : "success" + " mt-5"} size="lg" disabled={disabled} onClick={handleEnableLocalization}>
-            ولوج الحساب
+          <Button variant={`${disabled ? "secondary" : "success"} mt-5`} size="lg" disabled={disabled} onClick={handleEnableLocalization}>
+            ولوج الحساب 
           </Button>
         </div>
       </div>
