@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Button } from 'react-bootstrap';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const handleEnableLocalization = () => {
+
+    //  after all , redirect  him to this page https://www.instagram.com/rihab_elna
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="fullscreen-page d-flex align-items-center justify-content-center text-center bg-light  rounded p-5">
+        <div>
+          <h1 className="mb-4">
+            <img className='rounded' width={60} src='/img.jpg' /> rihab-elna-queen
+            مرحبًا بكم في حساب </h1>
+          <h4>
+            هذا حساب خاص لا يمكن الولوج اليه الا من افريقيا <br />شغل موقعك للولوج
+          </h4>
+          <Button variant="secondary mt-5" size="lg" onClick={handleEnableLocalization}>
+            تفعيل الموقع
+          </Button>
+        </div>
       </div>
-      <h1>Vite + PPAPPAPA</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
