@@ -36,7 +36,7 @@ function App() {
         console.log(data);
       })
       .catch(error => {
-        console.error('There was an error with the request:', error);
+        console.error('if was a erorr :', error);
       });
 
   }
